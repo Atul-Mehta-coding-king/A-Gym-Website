@@ -25,6 +25,18 @@
         .item img{
             height: 280px;
         }
+/* FOR FIXED OWL carousel in google chrome */
+        .owl-carousel .owl-wrapper-outer{
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            z-index: 1;  /* added this */
+        }
+        .owl-item { 
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0); 
+            -ms-transform: translateZ(0); 
+        }
     </style>
   </head>
   <body>
