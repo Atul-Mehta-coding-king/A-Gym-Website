@@ -57,3 +57,33 @@ button{
 button:hover{
     background-color: rgba(0, 136, 169, 0.8);
 }
+.RF,Form{
+    text-align: center;
+    color: blue;
+}
+.MS{
+    text-align: center;
+    color: black;
+}
+.M{
+    color: black;
+    padding: 50px ;
+}
+strong{
+    color: black;
+    padding: 100px;
+}
+button{
+    color: white;
+    background-color: red;
+}
+
+.x{
+    margin: 20px 100px;
+}
+.y{
+    margin:20px 100px;
+}
+.z{
+    margin: 20px 100px;
+}
