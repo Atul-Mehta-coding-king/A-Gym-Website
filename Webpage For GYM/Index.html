@@ -272,7 +272,7 @@
     <form class="Form" action="results.html">
         <label for="name">NAME</label>
         <div>
-            <input type="text" name="Myname" id="name">
+            <input type="text" name="Myname" id="Name">
         </div>
 
         <br><label for="email">EMAIL</label>
@@ -319,6 +319,31 @@
     <button class="x">Join</button> <button class="y">Join</button> <button class="z">Join</button>
     <br>
     <p><strong >Bodybuilding</strong></span> <span><strong >Bodybuilding + cardio</strong></span> <Span><strong >Bodybuilding + cardio <br>Includes personal training</strong></p>
-    
-  </body>
-</html>
+    <div class="container">
+        <form class="Quiry" onsubmit="sendEmail(); reset(); return false" >
+            <h3>Quiry</h3>
+            <input type="text"id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email id" required>
+            <input type="text" id="phone" placeholder="Phone no." required>
+            <textarea id="message" rows="4" placeholder="How can we help you"></textarea>
+            <button type="submit" id="Button">Send</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "king.atul.mehta47@gmail.com",
+                Password : "password",
+                To : 'mehtaatul349@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New contact form",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+            }
+    </script>
+</body>
+</html>   
