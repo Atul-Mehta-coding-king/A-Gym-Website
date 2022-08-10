@@ -4,17 +4,17 @@
     background-color: black;
     overflow: hidden;
 }
-.{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #538e3c;
+    font-family: 'Poppins',sans-serif;
 }
 li,a,button{
     font-family: "Monstserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #902797;
+    color: white;
     text-decoration: none;
 }
 
@@ -62,9 +62,15 @@ button:hover{
     text-align: center;
     color: blue;
 }
+.Form{
+    border: black solid;
+    margin: 10px 200px;
+}
+
 .Subcription{
     background: #5c539d;
-    margin: 20px;
+    border: solid black;
+    margin: 50px;
 }
 
 .Subcription h2{
