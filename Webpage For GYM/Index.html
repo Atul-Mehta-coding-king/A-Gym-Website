@@ -353,9 +353,10 @@
         function sendEmail(){
             Email.send({
                 Host : "smtp.gmail.com",
-                Username : "king.atul.mehta47@gmail.com",
+                Username : "king.atul.mehta47@gmail.com", /* give a email id */
                 Password : "password",
-                To : 'mehtaatul349@gmail.com',
+                Password : "password",
+                To : 'mehtaatul349@gmail.com', /* give a email id  for recieve*/
                 From : document.getElementById("email").value,
                 Subject : "New contact form",
                 Body : "And this is the body"
